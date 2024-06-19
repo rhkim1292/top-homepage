@@ -1,0 +1,35 @@
+{
+  "name": "top-homepage",
+  "version": "1.0.0",
+  "description": "A beautifully responsive homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhkim1292/top-homepage.git"
+  },
+  "keywords": [
+    "responsive",
+    "homepage",
+    "home",
+    "page",
+    "the",
+    "odin",
+    "project",
+    "TheOdinProject",
+    "top",
+    "portfolio"
+  ],
+  "author": "Randy H Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhkim1292/top-homepage/issues"
+  },
+  "homepage": "https://rhkim1292.github.io/top-homepage",
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
