@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+	box-sizing: border-box;
+}
 
 html,
 body {
@@ -6,12 +11,58 @@ body {
 	padding: 0;
 }
 
+.playfair-display-font {
+	font-family: "Playfair Display", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+.roboto-font {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+main {
+	padding: 0px 24px 0px;
+}
+
+header {
+	padding-top: 60px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 3rem;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+p {
+	color: #575757;
+}
+
+.about-me-paragraph {
+	font-size: 1.7rem;
+	line-height: 2.5rem;
+	margin-top: 0.8rem;
+	margin-bottom: 1rem;
+	font-weight: 400;
+}
+
 .bg-graphic {
 	z-index: -1;
 	width: 200%;
 	height: 200%;
 	position: absolute;
-	transform: translate(-70%, -80%) rotate(-31deg);
+	transform: translate(-70%, -88%) rotate(-31deg);
 	background-color: #448cac;
 	color: #448cac;
 }
@@ -20,28 +71,29 @@ body {
 	position: relative;
 }
 
-.portrait-overlay-text {
-	position: absolute;
-	bottom: 0;
-	font-size: 24px;
-	font-weight: bold;
-	color: white;
+.portrait-img-container img {
+	-webkit-box-shadow: 0px 0px 22px -4px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 22px -4px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 22px -4px rgba(0, 0, 0, 0.75);
 }
 
-.playfair-display-portrait {
-	font-family: "Playfair Display", serif;
-	font-optical-sizing: auto;
-	font-weight: 500;
-	font-style: normal;
+.portrait-overlay-text {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: white;
+	padding: 0px 0px 0px 7px;
+	text-shadow: -1px 3px 5px rgba(0, 0, 0, 0.83);
+	font-weight: 400;
 	font-size: 48px;
 }
 
 .social-links-container {
 	display: flex;
 	justify-content: center;
-	gap: 16px;
+	gap: 1.625rem;
 }
 
 .social-link {
-	width: 32px;
+	width: 2.625rem;
 }
