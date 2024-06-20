@@ -9,6 +9,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 .playfair-display-font {
@@ -27,21 +28,23 @@ main {
 	padding: 14vw 1.5rem 0px;
 }
 
-section {
+header section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 6rem;
 }
 
 h1 {
 	font-weight: 500;
 	font-size: 3rem;
-	margin-top: 20px;
-	margin-bottom: 0px;
+	margin-top: 1.25rem;
+	margin-bottom: 1.5rem;
 }
 
-header h1 {
+header h1,
+section h1 {
 	text-align: center;
 	overflow: hidden;
 }
@@ -53,7 +56,7 @@ p {
 .about-me-paragraph {
 	font-size: 1.7rem;
 	line-height: 2.5rem;
-	margin-top: 0.8rem;
+	margin-top: 0;
 	margin-bottom: 1rem;
 	font-weight: 400;
 }
@@ -104,12 +107,67 @@ p {
 	width: 2.625rem;
 }
 
+.project-cards-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2rem;
+}
+
+.project-card {
+	-webkit-box-shadow: 0px 0px 22px -4px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 22px -4px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 22px -4px rgba(0, 0, 0, 0.75);
+	min-height: 300px;
+}
+
+.project-screenshot {
+	width: 100%;
+	max-height: 250px;
+	text-align: center;
+	object-fit: contain;
+}
+
+.project-details {
+	padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.project-details h2 {
+	font-weight: 500;
+	margin: 0 0.8rem;
+	font-size: 1.5rem;
+}
+
+.project-details p {
+	font-weight: 500;
+}
+
+.project-details .heading-links-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.project-details .heading-links-container .links-container {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+.project-github-link {
+	width: 28px;
+	height: 28px;
+}
+
+.project-external-link {
+	width: 28px;
+	height: 28px;
+}
+
 @media screen and (min-width: 601px) {
 	main {
 		padding: 8rem 6rem 0px;
 	}
 
-	section {
+	header section {
 		display: block;
 		float: left;
 		background-color: white;
@@ -117,6 +175,7 @@ p {
 		-moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.59);
 		box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.59);
 		padding: 0 2rem 2rem 2rem;
+		margin-bottom: 4rem;
 	}
 
 	.portrait-img-container {
@@ -156,6 +215,20 @@ p {
 		justify-content: end;
 		padding-top: 1rem;
 	}
+
+	main section {
+		float: none;
+	}
+
+	section h1 {
+		text-align: left;
+	}
+
+	.project-details h2 {
+		font-weight: 500;
+		margin: 0;
+		font-size: 1.5rem;
+	}
 }
 
 @media screen and (min-width: 1201px) {
@@ -163,7 +236,7 @@ p {
 		padding: 6rem 5rem 0px;
 	}
 
-	section {
+	header section {
 		position: relative;
 		-webkit-box-shadow: 8px 9px 18px -7px rgba(0, 0, 0, 0.75);
 		-moz-box-shadow: 8px 9px 18px -7px rgba(0, 0, 0, 0.75);
