@@ -294,6 +294,7 @@ footer img.footer-portrait {
 		display: flex;
 		gap: 2rem;
 		padding: 2rem 2rem 2rem 2rem;
+		justify-content: center;
 	}
 
 	footer h1 {
@@ -371,5 +372,12 @@ footer img.footer-portrait {
 	.bg-graphic {
 		top: -3370px;
 		left: -2580px;
+	}
+
+	footer div.footer-info-container {
+		max-width: 30vw;
+	}
+	footer div.footer-info-container h1 {
+		margin: 0;
 	}
 }
