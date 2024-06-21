@@ -26,7 +26,7 @@ body {
 }
 
 main {
-	padding: 14vw 1.5rem 0px;
+	padding: 14vw 1.5rem 10rem;
 }
 
 header section {
@@ -161,6 +161,65 @@ p {
 .project-external-link {
 	width: 28px;
 	height: 28px;
+}
+
+footer {
+	background-color: #448cac;
+	color: white;
+	padding: 2rem 2rem 0 2rem;
+}
+
+footer h1 {
+	margin: 0;
+	text-align: center;
+	font-weight: 400;
+}
+
+footer p {
+	color: white;
+}
+
+footer p.get-in-touch {
+	font-size: 1.5rem;
+}
+
+footer div.number-container {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+footer div.number-container div.phone-icon-container {
+	width: 24px;
+	height: 24px;
+	fill: white;
+}
+
+footer div.email-container {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+footer div.email-container div.email-icon-container {
+	width: 24px;
+	height: 24px;
+	fill: white;
+}
+
+footer div.social-links-container {
+	margin-top: 1rem;
+	gap: 2.5rem;
+	margin-bottom: 5rem;
+}
+
+footer a.social-link {
+	width: 3.5rem;
+}
+
+footer img.footer-portrait {
+	width: calc(100% + (2rem * 2));
+	margin-left: -2rem;
 }
 
 @media screen and (min-width: 601px) {
